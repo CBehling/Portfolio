@@ -5,9 +5,9 @@
  */ 
  
 // email
-define('TO_EMAIL', 'antonino.scarfi@gmail.com'); 
-define('FROM_EMAIL', 'info@test.it');  
-define('FROM_NAME', 'Test'); 
+define('TO_EMAIL', 'c.behling17@gmail.com'); 
+define('FROM_EMAIL', 'name');  
+define('FROM_NAME', 'email'); 
 
 /**
  * define the body of the email. You can add some shortcode, with this format: %ID%
@@ -21,7 +21,7 @@ define('FROM_NAME', 'Test');
  * email: %email%   
  */ 
 define( 'BODY', '%message%<br /><br /><small>email inviata da %name%, email %email%.</small>' );
-define( 'SUBJECT', 'Email from yoursite.com' );
+define( 'SUBJECT', 'Email from cbehling.com' );
 
 // here the redirect, when the form is submitted
 define( 'ERROR_URL', 'contatti_error.html' );
