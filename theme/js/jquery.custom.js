@@ -195,7 +195,7 @@ $(document).ready(function(){
         $('.controls, .top', slider_wrap).show();
     
         // adjust height, according to visible item
-        $('.sliderWrap', slider_wrap).css('height', height_item * visible - 6);
+        $('.sliderWrap', slider_wrap).css('height', 2*(height_item * visible - 6));
     
         function check_position() {    
             var margin_top_ul = $('ul', slider_wrap).css('margin-top');
