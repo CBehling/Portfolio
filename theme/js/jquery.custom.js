@@ -337,13 +337,13 @@ function lightbox()
                 $('.zoom').fadeOut(500, function(){$(this).remove()});
             }
         );
-    	$("a[rel^='prettyPhoto']").prettyPhoto({
-            slideshow:5000,
-            theme: 'pp_default', 
-            autoplay_slideshow:false,
-            deeplinking: false,
-            show_title:false
-        });        
+    	// $("a[rel^='prettyPhoto']").prettyPhoto({
+     //        slideshow:5000,
+     //        theme: 'pp_default', 
+     //        autoplay_slideshow:false,
+     //        deeplinking: false,
+     //        show_title:false
+     //    });        
     }
 } 
 

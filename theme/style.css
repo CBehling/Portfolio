@@ -112,9 +112,9 @@ body .last, body .widget-last { margin-right:0; border-right:0; }
 
 #logo img {max-width:100%;width:auto;}
 
+START
 
-
-/* ====================== START HEADER ====================== */
+/* ======================  HEADER ====================== */
 #topbar{background-color:#edecec;padding:0 10px;}
 #topbar ul{list-style:none;margin:0;}
 #topbar ul li{display:inline-block; font-size:10px; margin:8px 0px 6px; }
