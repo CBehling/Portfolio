@@ -85,6 +85,7 @@
         
         <!-- CUSTOM JAVASCRIPT -->                           
         <script type="text/javascript" src="js/jquery.custom.js"></script>
+    
     </head>
     
     <body class="image-sphere-style responsive">
@@ -94,29 +95,14 @@
             
             <!-- START WRAPPER -->
             <div class="wrapper group">
-                
-                <!-- START TOPBAR -->
-                <div id="topbar">
-                    <div class="inner">
-                        <ul class="topbar_links">
-                            <li>
-                                <a href="#">Login</a>  
-                            </li>
-                            <li> | <a href="contact.html">Contact Us</a></li>
-                        </ul>
-                        <div class="clear"></div>
-                    </div>
-                    <!-- end.inner -->
-                </div>
-                <!-- END TOPBAR -->   
                  
                 <!-- START HEADER -->
                 <div id="header" class="group">
                 
                     <!-- START LOGO -->
                     <div id="logo" class="group">
-                        <a href="index.html" title="Diverso"> 
-                        <img src="images/logo.png" alt="Logo Diverso" />
+                        <a href="index.html" title="CBehling"> 
+                        <img src="images/logo.png" alt="Logo CBehling" />
                         </a>              
                     </div>
                     <!-- END LOGO -->   
@@ -126,68 +112,52 @@
                         <ul class="level-1 white">
                             <li class="home">
                                 <a href="index.html">HOME</a>
-                                <ul class="sub-menu">
-                                    <li><a href="home-version-2.html">HOME VERSION 2</a></li>
-                                    <li><a href="home-version-3.html">HOME VERSION 3</a></li>
-                                    <li><a href="home-version-4.html">HOME VERSION 4</a></li>
-                                    <li><a href="home-version-5.html">HOME VERSION 5</a></li>
-                                    <li><a href="home-version-6.html">HOME VERSION 6</a></li>
-                                </ul>
                             </li>
-                            <li class="folder">
-                                <a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                    <li><a href="staff.html">Staff</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="archives.html">Archives</a></li>
-                                </ul>
-                            </li>
+
                             <li class="bookmark">
-                                <a href="#">Portfolio</a>
-                                <ul class="sub-menu">
-                                    <li><a href="portfolio-3-columns.html">3 Columns</a></li>
-                                    <li><a href="portfolio-with-slider.html">With Slider</a></li>
-                                    <li><a href="portfolio-big-image.html">Big Image</a></li>
-                                    <li><a href="portfolio-full-description.html">Full Description</a></li>
-                                    <li><a href="portfolio-filterable.html">Filterable</a></li>
-                                </ul>
+                                <a href="portfolio-3-columns.html">Portfolio</a>
                             </li>
-                            <li class="burst">
-                                <a href="#">Shortcodes</a>
-                                <ul class="sub-menu">
-                                    <li><a href="shortcode-nivo-slider.html">Nivo Slider</a></li>
-                                    <li><a href="shortcode-media-widgets.html">Media &#038; Widgets</a></li>
-                                    <li><a href="shortcode-alert-box-buttons.html">Alert box &#038; buttons</a></li>
-                                    <li><a href="shortcode-icon-sections.html">Icon Sections</a></li>
-                                    <li><a href="shortcode-table-box-prices.html">Table &#038; Box prices</a></li>
-                                    <li><a href="shortcode-typography.html">Typography</a></li>
-                                    <li><a href="shortcode-mix-various.html">Mix &#038; Various</a></li>
-                                </ul>
-                            </li>
-                            <li class="calendar">
-                                <a href="blog.html">Blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-small-image.html">Small Image</a></li>
-                                    <li><a href="blog-big-image.html">Big image</a></li>
-                                </ul>
-                            </li>
+
+                            <!--<li class="calendar">
+                                <a href="blog-big-image.html">Blog</a>
+                            </li>-->
+
                             <li class="email"><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <!-- END NAV -->   
-                </div>
-                <!-- END HEADER -->        
+                    <!-- END NAV -->  
+        </div>
+                <!-- END HEADER -->
         
                 <!-- START CONTENT -->
-                <div id="content" class="layout-sidebar-left group portfolio-filterable">
+                <div id="content" class="layout-sidebar-no portfolio-filterable">
                 
                     <!-- SLOGAN --> 
                     <div id="slogan" class="inner">
                         <h1 class="only">This is the slogan used for Gallery page</h1>
+                    <div id="gal" class="gallery-categories">
+                        <ul id="gallery_categories_widget">
+                            <li class="segment-1"><a data-value="all" href="gallery.html">All</a></li>
+                            <li class="segment-24"><a href="#" data-value="cake">Cake</a></li>
+                            <li class="segment-22"><a href="#" data-value="chocolate">Chocolate</a></li>
+                            <li class="segment-21"><a href="#" data-value="coffee">Coffee</a></li>
+                            <li class="segment-23"><a href="#" data-value="fruits">Fruits</a></li>
+                        </ul>
+                    </div>
                     </div>         
                     <!-- END SLOGAN --> 
+
+                    <!-- BEGIN PORTFOLIO FILTRATION -->
+                    <div id="gal" class="gallery-categories">
+                        <ul id="allery_categories_widget">
+                            <li class="segment-1"><a data-value="all" href="gallery.html">All</a></li>
+                            <li class="segment-24"><a href="#" data-value="cake">Cake</a></li>
+                            <li class="segment-22"><a href="#" data-value="chocolate">Chocolate</a></li>
+                            <li class="segment-21"><a href="#" data-value="coffee">Coffee</a></li>
+                            <li class="segment-23"><a href="#" data-value="fruits">Fruits</a></li>
+                        </ul>
+                    </div>
+                    <!-- END PORTFOLIO FILTRATION -->
                 
                     <!-- START PRIMARY -->
                     <div id="primary" class="hentry group wrapper-content" role="main">
@@ -196,42 +166,41 @@
                             <ul class="gallery-wrap image-grid group">
                             
                                 <li data-id="id-1" class="coffee ">
-                                    <li class="hentry first">
-                                    <a class="thumb img" href="portfolio-full-description.html">
-                                        <img src="images/portfolio/three-columns/006-thumb.jpg" alt="" />
-                                    </a>
-                                    <h5><a href="#">Senior Capstone Project in Engineering</a></h5>
-                    
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
-                                
-                                    <a class="read-more" href="#"
+                                    <div class="internal_page_item internal_page_item_gallery">
+                                        <a href="#"><img src="images/portfolio/three-columns/001-thumb.jpg" alt="kuchen" title="kuchen" /></a>
+                                        Bamboo Bicycle
+                                        <div class="overlay">
+                                            <h5><a href="#">Bamboo Bicycle</a></h5>
+                                            <p>Currently a work in progress, this project focuses on creating a bicycle combining bamboo <i>- a natural material with a tradition in construction -</i> with carbon fiber <i>- a space age technology -</i> a functional and beautiful art piece can be created. </p>
+                                            <!--<a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="Easter cakes and eggs">Zoom</a>-->
+                                            <a class="icon-more" href="#" title="Bamboo Bicycle">View More</a>
+                                        </div>
+                                    </div>
                                 </li>
                                 
                                 <li data-id="id-2" class="cake chocolate ">
-                                    <li class="hentry">
-                                    <a class="thumb img" href="portfolio-full-description.html">
-                                        <img src="images/portfolio/three-columns/006-thumb.jpg" alt="" />
-                                    </a>
-                                    <h5><a href="#">Senior Capstone Project in Engineering</a></h5>
-                    
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
-                                
-                                    <a class="read-more" href="#"
-                                </li>
+                                    <div class="internal_page_item internal_page_item_gallery">
+                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="kuchen" title="kuchen" /></a>
+                                        Bamboo Bicycle
+                                        <div class="overlay">
+                                            <h5><a href="#">Bamboo Bicycle</a></h5>
+                                            <p align="justify">Currently a work in progress, this project focuses on creating a bicycle combining bamboo <i>- a natural material with a tradition in construction -</i> with carbon fiber <i>- a space age technology -</i> a functional and beautiful art piece can be created.</p>
+                                            <a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="Easter cakes and eggs">Zoom</a>
+                                            <a class="icon-more" href="#" title="Easter cakes and eggs">View More</a>
+                                        </div>
+                                    </div>
                                 
                                 <li data-id="id-3" class="cake ">
-                                     <li class="hentry last">
-                                    <a class="thumb img" href="portfolio-full-description.html">
-                                        <img src="images/portfolio/three-columns/006-thumb.jpg" alt="" />
-                                    </a>
-                                    <h5><a href="#">Senior Capstone Project in Engineering</a></h5>
-                    
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
-                                
-                                    <a class="read-more" href="#"
+                                    <div class="internal_page_item internal_page_item_gallery">
+                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="kuchen" title="kuchen" /></a>
+                                        carbon
+                                        <div class="overlay">
+                                            <h5><a href="#">Easter cakes and eggs</a></h5>
+                                            <p>Spread on white egg cream</p>
+                                            <a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="Easter cakes and eggs">Zoom</a>
+                                            <a class="icon-more" href="#" title="Easter cakes and eggs">View More</a>
+                                        </div>
+                                    </div>
                                 </li>
                                 
                                 <li data-id="id-4" class="chocolate ">
@@ -278,7 +247,7 @@
                     <!-- END CONTENT -->
                     
                     <!-- START SIDEBAR -->
-                    <div id="sidebar" class="group">
+                    <!--<div id="sidebar" class="group">
                     
                         <div class="widget-first widget gallery-categories">
                             <h3>Portfolio Categories</h3>
@@ -291,7 +260,7 @@
                             </ul>
                         </div>
                         
-                    </div>
+                    </div>-->
                     <!-- END SIDEBAR -->  
                     
                 </div>

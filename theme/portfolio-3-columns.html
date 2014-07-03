@@ -86,6 +86,23 @@
         <!-- CUSTOM JAVASCRIPT -->                           
         <script type="text/javascript" src="js/jquery.custom.js"></script>
 
+        <script type="text/javascript">
+            $(function() {
+            $(window).scroll(function() {
+            if($(this).scrollTop() > 200) {
+                $('#backtotop').fadeIn();   
+                } else {
+                $('#backtotop').fadeOut();
+                }
+            });
+ 
+            $('#backtotop').click(function() {
+                $('body,html').animate({scrollTop:0},800);
+            }); 
+        });
+        </script>
+
+
     </head>
     
     <body class="image-sphere-style responsive">
@@ -134,7 +151,7 @@
                 
                     <!-- SLOGAN --> 
                     <div id="slogan" class="inner">
-                        <h1 class="only">Enjoy some of my recent work:</h1>
+                        <h1 id="top" class="only">Enjoy some of my recent work:</h1>
                     </div> 
                     <!-- END SLOGAN --> 
                 
@@ -151,7 +168,7 @@
                                 </a>
                                 <h5><a href="#">Bamboo Bicycle</a></h5>
                     
-                                <p>Currently a work in progress, this project focuses on creating a bicycle combining bamboo - a natural material with a tradition of construction - with carbon fiber - a space age technology - a functional and beautiful art piece can be created.</p>
+                                <p align="justify">Currently a work in progress, this project focuses on creating a bicycle combining bamboo <i>- a natural material with a tradition in construction -</i> with carbon fiber <i>- a space age technology -</i> a functional and beautiful art piece can be created.</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
                             </li>      
@@ -164,8 +181,7 @@
                                 </a>
                                 <h5><a href="#">Senior Capstone Project in Engineering</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
+                                <p align="justify">Worked in a team with Depuy Synthes Mitek Sports Medicine to expand their line of orthopedic arthroscopic surgical devices. Based on simulation, lab testing, and surgeon feedback, designs were developed and a proof-of-concept prototype was delivered.</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
                             </li>
@@ -176,10 +192,9 @@
                                 <a class="thumb img" href="images/portfolio/three-columns/006.jpg" rel="prettyPhoto[movies]">
                                     <img src="images/portfolio/three-columns/006-thumb.jpg" alt="" />
                                 </a>
-                                <h5><a href="#">Sculptural Bicycle Design</a></h5>
+                                <h5><a href="#">Sculptural Bicycle Design: Xantus</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
+                                <p align="justify">Named after a species of hummingbird, this functional carbon fiber sculptural piece exists in the intersection of art and engineering, forcing the engineering feat of a bicycle into a sculptural form that plays on the traditional bicycle and the human body that powers it.</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
                             </li>      
@@ -190,10 +205,8 @@
                                 <a class="thumb img" href="images/portfolio/three-columns/001.jpg" rel="prettyPhoto[movies]">
                                     <img src="images/portfolio/three-columns/001-thumb.jpg" alt="" />
                                 </a>
-                                <h5><a href="#">Integrated Product Design</a></h5>         
-                                <p>Sed ut perspiciatis <strong>unde omnis</strong> iste natus error sit 
-                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque 
-                                ipsa quae ab illo inventore veritatis et</p>
+                                <h5><a href="#">Integrated Product Design: Sprout</a></h5>         
+                                <p align="justify">Working in a team of design, business, and engineering students, an aquaponics system was designed as an educational product for children that engaged the entire family in learning about water conservation, and Sprout was born.</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
                             </li>     
@@ -204,9 +217,9 @@
                                 <a class="thumb img" href="images/portfolio/three-columns/002.jpg" rel="prettyPhoto[movies]">
                                     <img src="images/portfolio/three-columns/002-thumb.jpg" alt="" />
                                 </a>
-                                <h5><a href="#">Elecanisms</a></h5>
+                                <h5><a href="#">Mechatronics: TankFollower</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
                                 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
                     
                                 <a class="read-more" href="#">View Project</a>
@@ -220,7 +233,7 @@
                                 </a>
                                 <h5><a href="#">Design for Manufacturing</a></h5>
                     
-                                <p>A <strong>break</strong> at work is a period of time during a shift in which 
+                                <p align="justify">A <strong>break</strong> at work is a period of time during a shift in which 
                                 an employee is allowed to take time off from his/her</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -234,10 +247,10 @@
                                 </a>
                                 <h5><a href="#">Mechanical Design</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
                                 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
                     
-                                <p><a class="read-more" href="#">View Project</a></p>
+                                <a class="read-more" href="#">View Project</a>
                             </li>
                             <!-- END WORK -->
                                    
@@ -248,7 +261,7 @@
                                 </a>
                                 <h5><a href="#">Mechanical Prototyping</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -262,7 +275,7 @@
                                 </a>
                                 <h5><a href="#">Fundamentals of Machine Shop Operation</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -276,7 +289,7 @@
                                 </a>
                                 <h5><a href="#">Principles of Engineering</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -290,7 +303,7 @@
                                 </a>
                                 <h5><a href="#">Human Factors in Interface Design</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -304,7 +317,7 @@
                                 </a>
                                 <h5><a href="#">User Oriented Collaborative Design</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -318,7 +331,7 @@
                                 </a>
                                 <h5><a href="#">3D Design</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -332,7 +345,7 @@
                                 </a>
                                 <h5><a href="#">Responsive Drawing and Visual Thinking</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -346,7 +359,7 @@
                                 </a>
                                 <h5><a href="#">Book Cover Design</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -360,7 +373,7 @@
                                 </a>
                                 <h5><a href="#">Remote Control Crab Toy</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -374,7 +387,7 @@
                                 </a>
                                 <h5><a href="#">Modeling and Simulation of Billiards</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -388,7 +401,7 @@
                                 </a>
                                 <h5><a href="#">Book Cover Design</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -402,7 +415,7 @@
                                 </a>
                                 <h5><a href="#">Logo Design</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -416,7 +429,7 @@
                                 </a>
                                 <h5><a href="#">Captive Nut</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -430,7 +443,7 @@
                                 </a>
                                 <h5><a href="#">Wire Jewlery</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
@@ -444,24 +457,24 @@
                                 </a>
                                 <h5><a href="#">Architecture</a></h5>
                     
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                <p align="justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
                                 
                                 <a class="read-more" href="#">View Project</a>
                             </li>      
-                            <!-- END WORK --> 
+                            <!-- END WORK -->  
 
-                        </ul>                
-                        <!-- END PORTFOLIO -->   
+                        </ul>              
+
+                        <!-- END PORTFOLIO -->  
             
-                        <!-- START PAGINATION -->                   
+                        <!-- START PAGINATION --> 
+                        <div id="backtotop">Scroll to Top</div>                   
                         <!--<div class='general-pagination group'>
-                            <a href='#' class='selected'>1</a>
-                            <a href='#'>2</a>
-                            <a href='#'>&rsaquo;</a>
-                        </div> -->       
+                            <a href='#nav' class='selected'>Top of Page</a>
+                        </div>-->
                         <!-- END PAGINATION --> 
-                        
+                    
                     </div>
                     <!-- END CONTENT -->
                     
@@ -479,7 +492,7 @@
                             <!--<a href="#" class="socials youtube" title="Youtube">youtube</a>-->
                             <!--<a href="#" class="socials twitter" title="Twitter">twitter</a>-->
                             <a href="http://www.linkedin.com/pub/charlie-behling/88/321/186/" target="_blank" class="socials linkedin" title="LinkedIn">LinkedIn</a>
-                            <a href="mailto:cbehling17@gmail.com" class="socials mail" title="Mail">Mail</a>
+                            <a href="mailto:behling.charles@gmail.com" class="socials mail" title="Mail">Mail</a>
                             <!--<a href="#" class="socials skype" title="Skype">skype</a>-->
                         </p>
                     </div>
