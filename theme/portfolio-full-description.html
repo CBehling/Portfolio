@@ -85,6 +85,12 @@
         
         <!-- CUSTOM JAVASCRIPT -->                           
         <script type="text/javascript" src="js/jquery.custom.js"></script>
+
+        <!-- // <script src="//code.jquery.com/jquery-latest.min.js"></script> -->
+        <script src="js/unslider.min.js"></script>
+
+        <script type="js/jquery.barousel.js"></script>
+
     </head>
 
     <body class="image-sphere-style responsive">
@@ -144,33 +150,49 @@
                             <img alt="004" class="internal" src="images/portfolio/full-description/001.jpg" />
                             <h2>Kassyopea Theme</h2>
                         </div>-->
-                        <script type="text/javascript">
-                            jQuery(document).ready(function($){
-                                if( !jQuery().nivoSlider ) {
-                                    $.getScript(' js/jquery.nivo.slider.pack.js ', function(){
-                                            
-                                        $('.nivo-slider').nivoSlider({
-                                            effect: 'fade',
-                                            directionNav:false
-                                        });
-                            
-                                    });
-                                } else {
-                                        $('.nivo-slider').nivoSlider({
-                                            effect: 'fade',
-                                            directionNav:false
-                                        });
-                                }
-                            });
-                        </script>
 
-                        <div class="nivo-slider" style="width:640px; height:269px">
+                        <div id="barousel_prevnextnav" class="barousel">
+                            <div class="barousel_image">
+                                <!-- image 1 -->
+                                <img src="image_1.jpg" alt="" class="default" />
+                                <!-- image 2 -->
+                                <img src="image_2.jpg" alt="" />
+                                <!-- image xx -->
+                                <img src="image_xx.jpg" alt="" />
+                            </div>
+                            <div class="barousel_content">
+                                <!-- content 1 -->
+                                <div class="default">
+                                    [any html content]
+                                </div>
+                                <!-- content 2 -->
+                                <div>
+                                    [any html content]
+                                </div>
+                                <!-- content xx -->
+                                <div>
+                                    [any html content]
+                                </div>
+                            </div>
+                            <div class="barousel_nav">
+                            </div>
+                        </div>                        
+
+<!--                         <div class="banner">
+                            <ul>
+                                <li>
+                                    <img src="images/portfolio/full-description/001.jpg" alt="3" />
+                                </li>
+                                <li>
+                                    <img src="images/portfolio/full-description/640x331.jpg" alt="2" />
+                                </li>
+                                <li>
+                                    <img src="images/portfolio/full-description/001.jpg" alt="4" />
+                                </li>
+                            </ul>
                             <img src="images/portfolio/full-description/640x331.jpg" alt="1" />
-                            <img src="images/portfolio/full-description/001.jpg" alt="2" />
-                            <img src="images/portfolio/full-description/001.jpg" alt="3" />
-                            <img src="images/portfolio/full-description/001.jpg" alt="4" />
                             <img src="images/portfolio/full-description/001.jpg" alt="5" />
-                        </div>
+                        </div>  -->
                 
                         <div> <!--class="post_content group">-->
                             <div class="work-skillsdate">
