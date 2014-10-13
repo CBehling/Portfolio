@@ -88,16 +88,17 @@
 
         <script type="text/javascript">
             $(function() {
-            $(window).scroll(function() {
-            if($(this).scrollTop() > 0) {
-                $('#backtotop').fadeIn();   
-                } else {
-                $('#backtotop').fadeOut();
-                }
-            });
+                $('#backtotop').fadeOut(0);
+                $(window).scroll(function() {
+                    if($(this).scrollTop() > 200) { //Scroll Distance until Appearance
+                        $('#backtotop').fadeIn(); 
+                    } else {
+                        $('#backtotop').fadeOut();
+                    }
+                });
  
             $('#backtotop').click(function() {
-                $('body,html').animate({scrollTop:0},800);
+                $('body,html').animate({scrollTop:0},800); //Scroll Animation Length
             }); 
         });
         </script>
@@ -144,7 +145,7 @@
                         </ul>
                     </div>
                     <!-- END NAV -->  
-        </div>
+                </div>
                 <!-- END HEADER -->
         
                 <!-- START CONTENT -->
@@ -174,50 +175,47 @@
                                 <li data-id="id-1" class="coffee ">
                                     <div class="internal_page_item internal_page_item_gallery">
                                         <a href="#"><img src="images/portfolio/three-columns/001-thumb.jpg" alt="kuchen" title="kuchen" /></a>
-                                        Title
-                                        <div class="overlay">
+                                        <div align="left">Bamboo Bicycle</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
                                             <h5><a href="#">Bamboo Bicycle</a></h5>
                                             <p align="justify">Currently a work in progress, this project focuses on creating a bicycle combining bamboo <i>- a natural material with a tradition in construction -</i> with carbon fiber <i>- a space age technology -</i> a functional and beautiful art piece can be created. </p>
-                                            <!--<a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="Easter cakes and eggs">Zoom</a>-->
-                                            <a class="icon-more" href="#" title="Bamboo Bicycle">View More</a>
+                                            <!-- -->
+                                            <a class="icon-more" href="portfolio-full-description.html" title="View More">View More</a>
                                         </div>
                                     </div>
                                 </li>
                                 
                                 <li data-id="id-2" class="cake chocolate ">
                                     <div class="internal_page_item internal_page_item_gallery">
-                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="kuchen" title="kuchen" /></a>
-                                        Title
-                                        <div class="overlay">
-                                            <h5><a href="#">Bamboo Bicycle</a></h5>
-                                            <p align="justify">Currently a work in progress, this project focuses on creating a bicycle combining bamboo <i>- a natural material with a tradition in construction -</i> with carbon fiber <i>- a space age technology -</i> a functional and beautiful art piece can be created.</p>
-                                            <a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="Easter cakes and eggs">Zoom</a>
-                                            <a class="icon-more" href="#" title="Easter cakes and eggs">View More</a>
+                                        <a href="#"><img src="images/portfolio/filterable/SCOPE.jpg" alt="Senior Capstone Project in Engineering" title="SCOPE" /></a>
+                                        <div align="left">Senior Capstone Project in Engineering</div> 
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Senior Capstone Project in Engineering</a></h5>                    
+                                            <p align="justify">This was a year long project where I worked in a team with Depuy Synthes Mitek Sports Medicine to expand their line of orthopedic arthroscopic surgical devices. Based on simulation, lab testing, and surgeon feedback, designs were developed and a proof-of-concept prototype was delivered.</p>
+                                            <a class="icon-more" href="#" title="View More of SCOPE">View More</a>
                                         </div>
                                     </div>
                                 
                                 <li data-id="id-3" class="cake ">
                                     <div class="internal_page_item internal_page_item_gallery">
                                         <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="kuchen" title="kuchen" /></a>
-                                        Title
-                                        <div class="overlay">
-                                            <h5><a href="#">Easter cakes and eggs</a></h5>
-                                            <p>Spread on white egg cream</p>
-                                            <a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="Easter cakes and eggs">Zoom</a>
-                                            <a class="icon-more" href="#" title="Easter cakes and eggs">View More</a>
+                                        <div align="left">Sculptural Bicycle Design: Xantus</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Sculptural Bicycle Design: Xantus</a></h5>
+                                            <p align="justify">Named after a species of hummingbird, this functional carbon fiber sculptural piece exists in the intersection of art and engineering, forcing the engineering feat of a bicycle into a sculptural form that plays on the traditional bicycle and the human body that powers it.</p>
+                                            <a class="icon-more" href="#" title="View More of Xantus">View More</a>
                                         </div>
                                     </div>
                                 </li>
                                 
                                 <li data-id="id-4" class="chocolate ">
                                     <div class="internal_page_item internal_page_item_gallery">
-                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="kuchen" title="kuchen" /></a>
-                                        Title
-                                        <div class="overlay">
-                                            <h5><a href="#">Easter cakes and eggs</a></h5>
-                                            <p>Spread on white egg cream</p>
-                                            <a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="Easter cakes and eggs">Zoom</a>
-                                            <a class="icon-more" href="#" title="Easter cakes and eggs">View More</a>
+                                        <a href="#"><img src="images/portfolio/Sprout.png" alt="Sprout" title="Sprout" /></a>
+                                        <div align="left" >Sprout</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Sprout</a></h5>
+                                            <p align="justify">Working for an Integrated product Design class in a team of design, business, and engineering students, an aquaponics system was designed as an educational product for children that engaged the entire family in learning about water conservation, and Sprout was born.</p>
+                                            <a class="icon-more" href="#" title="View More">View More</a>
                                         </div>
                                     </div>
                                 </li>
@@ -225,29 +223,75 @@
                                 <li data-id="id-5" class="chocolate fruits ">
                                     <div class="internal_page_item internal_page_item_gallery">
                                         <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="coffee" title="coffee" /></a>
-                                        Title
-                                        <div class="overlay">
-                                            <h5><a href="#">We love fruits</a></h5>
-                                            <p>this is another image of your gallery</p>
-                                            <a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="We love fruits">Zoom</a>
-                                            <a class="icon-more" href="#" title="We love fruits">View More</a>
+                                        <div align="left">Mechatronics: TankFollower</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Mechatronics: TankFollower</a></h5>
+                                            <p align="justify">TankFollower is a versatile following robot built in six weeks for Elecanisms, an electrical and mechanical prototyping course. The goal was to design and build an autonomous robot and testing platform that follows a person, in order to learn about the integration of mechanical, electrical, and software systems.</p>
+                                            <a class="icon-more" href="#" title="View More">View More</a>
                                         </div>
                                     </div>
                                 </li>
                                 
                                 <li data-id="id-6" class="coffee ">
                                     <div class="internal_page_item internal_page_item_gallery">
-                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="Homemade cake on a saucer decorated with a pink flower" title="Homemade cake on a saucer decorated with a pink flower" /></a>
-                                        Title
-                                        <div class="overlay">
-                                            <h5><a href="#">Cute and clean design</a></h5>
-                                            <p>if you enjoy a clean and elegant style, Impero is your theme.</p>
-                                            <a class="icon-zoom" href="images/gallery/gallery.jpg" rel="prettyPhoto" title="Cute and clean design">Zoom</a>
-                                            <a class="icon-more" href="#" title="Cute and clean design">View More</a>
+                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="Homemade" title="Homemade" /></a>
+                                        <div align="left">Gravity Clock</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Gravity Clock</a></h5>
+                                            <p align="justify">For a class, Design for Manufacturing, a gravity powered pendulum clock was designed and built. The catch? The clock was designed by my team, parts were fabricated by another, and the clock was assembled by a third.</p>
+                                            <a class="icon-more" href="#" title="View More">View More</a>
                                         </div>
                                     </div>
                                 </li>
                                 
+                                <li data-id="id-7" class="coffee ">
+                                    <div class="internal_page_item internal_page_item_gallery">
+                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="Homemade" title="Homemade" /></a>
+                                        <div align="left">Tesla Turbine</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Tesla Turbine</a></h5>
+                                            <p align="justify">A Tesla Turbine is a type of turbine patented by Nikola Tesla in 1913. It is a bladeless turbine, relying on the boundary layer effect to turn a fluid flow into motion. This turbine was built entirely by me from stock materials as part of a class designed to teach the fundamentals of machining operations.</p>
+                                            <a class="icon-more" href="#" title="View More">View More</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li data-id="id-8" class="coffee ">
+                                    <div class="internal_page_item internal_page_item_gallery">
+                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="Homemade" title="Homemade" /></a>
+                                        <div align="left">Golflet</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Golflet</a></h5>
+                                            <p align="justify">The Golflet was designed for a course in Human Factors in Interface Design. We initially identified golf courses as an under-explored area of opportunity for interface development, and in interviews with golfers found that the traditional paper scorecard is a point of frustration for many of our users. The Golflet is a proposed solution.</p>
+                                            <a class="icon-more" href="#" title="View More">View More</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li data-id="id-9" class="coffee ">
+                                    <div class="internal_page_item internal_page_item_gallery">
+                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="Homemade" title="Homemade" /></a>
+                                        <div align="left">Captive Nut</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Captive Nut</a></h5>
+                                            <p align="justify">A captive Nut is a machinist's puzzle; a challenge for others to determine the construction method. How did the nut get onto the capped threaded rod? Having seen pictures of such a puzzle, I designed my own solution. I have built a number of these devices as gifts. View more for the spoiler.</p>
+                                            <a class="icon-more" href="#" title="View More">View More</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li data-id="id-10" class="coffee ">
+                                    <div class="internal_page_item internal_page_item_gallery">
+                                        <a href="#"><img src="images/gallery/gallery-208x168.jpg" alt="Homemade" title="Homemade" /></a>
+                                        <div align="left">Cylinder to Cube</div>
+                                        <div class="overlay" onclick="location.href='portfolio-full-description.html';" style="cursor:pointer;"><!--  title="View More"> -->
+                                            <h5><a href="#">Gizmos and Doohickeys</a></h5>
+                                            <p align="justify">Gizmos, doohickeys, mechinists' challenges, toys, and pretty things, all made by me for training, fun, or otherwise in the machine shop. View more for photos and descriptions.</p>
+                                            <a class="icon-more" href="#" title="View More">View More</a>
+                                        </div>
+                                    </div>
+                                </li>
+
                             </ul>
                             <div class="clear"></div>
                     
@@ -308,4 +352,4 @@
         <!-- END SHADOW -->       
         
     </body>
-</html> 
+</html>  

@@ -448,6 +448,7 @@ ul.accordion-slider { border-radius:10px; -moz-border-radius:10px; -webkit-borde
         .banner ul li { float: left; }
         .banner ul { margin-left: 0px!important; }
 .dot{background-color:black;}
+
 /* gallery */
 /* ====================== START PORTFOLIO GALLERY ====================== */
 .portfolio-filterable #sidebar {width:190px;z-index:2;position:relative;}                     
@@ -477,7 +478,7 @@ a.zoom { position:absolute; width:280px; height:204px; left:5px; top:5px; text-i
 #portfolio-gallery .overlay a.icon-more {background:url('images/more.png') no-repeat;border-left-width:0px;bottom:0;height:20px;position:absolute;right:0;width:20px;text-indent:-9999px;}
 #portfolio-gallery .overlay a.icon-zoom {background:url('images/zoom.png') no-repeat;bottom:0;height:20px;position:absolute;right:20px;text-indent:-9999px;width:20px;}
 #portfolio-gallery .overlay p {color: #666666;font-size:12px; margin:50px 10px 10px 10px!important;}
-.no_js #portfolio-gallery .overlay:hover {opacity: 1;}
+.no_js #portfolio-gallery .overlay:hover {opacity: 0.5;}
 
 .layout-sidebar-no .internal_page_item_gallery a.zoom { margin:26px 19px !important; }
 .layout-sidebar-no .internal_page_item_first a.zoom { margin:26px 7px !important }
@@ -1278,14 +1279,14 @@ a.socials.skype     { background:url('images/icons/socials/skype.png') no-repeat
 /* Back to TOP */
 #backtotop {
     cursor : pointer;
-    display : none;
-    margin : 0px 0px 0px 27.85%;
+    text-align : center;
+    display : inline-block;
+    margin : 0% 0% 0% 27.85%;
     position : fixed;
-    bottom : 1.5%;
+    bottom : 5%;
     font-size : 90%;
     padding : 10px;
-    width : 100px;
-    text-align : center;
+    width : 90px;
     background-color : #000;
     border-radius : 8px;
     -webkit-border-radius : 8px;
@@ -1296,10 +1297,10 @@ a.socials.skype     { background:url('images/icons/socials/skype.png') no-repeat
     opacity : 0.65;
     color : #FFF;
     font-size : 14px;
-           z-index : 1000;
+    z-index : 9999;
 }
-#backtotop:hover
-{
+
+#backtotop:hover{
     filter : alpha(opacity=90);
     -khtml-opacity : 0.9;
     -moz-opacity : 0.9;
@@ -1327,6 +1328,43 @@ a.socials.skype     { background:url('images/icons/socials/skype.png') no-repeat
 .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
 html[xmlns] .slides {display: block;} 
 * html .slides {height: 1%;}
+
+/*rslider*/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+  .slider3-pager ul {
+  margin-left: 0px !important;
+  }
 
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you

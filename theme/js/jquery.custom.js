@@ -1,12 +1,6 @@
 $(document).ready(function(){ 
 
-    $('.banner').unslider();
-
-    $('#barousel_prevnextnav').barousel({    
-        navType: 2
-    });
-
-	$('body').removeClass('no_js').addClass('yes_js'); 
+    $('body').removeClass('no_js').addClass('yes_js'); 
 	
 	$('a.no-link').click(function(){return false;});
     

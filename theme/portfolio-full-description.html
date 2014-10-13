@@ -83,13 +83,25 @@
         <!-- SLIDER NIVO -->                                                               
         <link rel="stylesheet" id="slider-nivo-css" href="css/slider-nivo.css" type="text/css" media="all" />     
         
+        <!-- Slideshow -->
+        <link rel="stylesheet" id='responsiveslider' href="css/responsiveslider.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+                $("#slider3").responsiveSlides({
+                  speed: 100,
+                  timeout: 5000,
+                  pause: true,
+                  manualControls: '#slider3-pager',
+                  maxwidth: 640
+                });
+            });
+        </script>
+
         <!-- CUSTOM JAVASCRIPT -->                           
         <script type="text/javascript" src="js/jquery.custom.js"></script>
-
-        <!-- // <script src="//code.jquery.com/jquery-latest.min.js"></script> -->
-        <script src="js/unslider.min.js"></script>
-
-        <script type="js/jquery.barousel.js"></script>
 
     </head>
 
@@ -120,7 +132,7 @@
                             </li>
 
                             <li class="bookmark">
-                                <a href="portfolio-3-columns.html">Portfolio</a>
+                                <a href="portfolio-filterable.html">Portfolio</a>
                             </li>
 
                             <!--<li class="calendar">
@@ -151,32 +163,28 @@
                             <h2>Kassyopea Theme</h2>
                         </div>-->
 
-                        <div id="barousel_prevnextnav" class="barousel">
-                            <div class="barousel_image">
-                                <!-- image 1 -->
-                                <img src="image_1.jpg" alt="" class="default" />
-                                <!-- image 2 -->
-                                <img src="image_2.jpg" alt="" />
-                                <!-- image xx -->
-                                <img src="image_xx.jpg" alt="" />
-                            </div>
-                            <div class="barousel_content">
-                                <!-- content 1 -->
-                                <div class="default">
-                                    [any html content]
-                                </div>
-                                <!-- content 2 -->
-                                <div>
-                                    [any html content]
-                                </div>
-                                <!-- content xx -->
-                                <div>
-                                    [any html content]
-                                </div>
-                            </div>
-                            <div class="barousel_nav">
-                            </div>
-                        </div>                        
+                        <div id="wrapper">
+                            <!-- Slideshow 3 -->
+                            <ul class="rslides" id="slider3">
+                              <li><img src="images/portfolio/full-description/001.jpg" alt=""></li>
+                              <li><img src="images/portfolio/full-description/001.jpg" alt=""></li>
+                              <li><img src="images/portfolio/full-description/001.jpg" alt=""></li>
+                              <li><img src="images/portfolio/full-description/001.jpg" alt=""></li>
+                              <li><img src="images/portfolio/full-description/001.jpg" alt=""></li>
+                              <li><img src="images/portfolio/full-description/001.jpg" alt=""></li>
+                            </ul>
+                        
+                            <!-- Slideshow 3 Pager -->
+                            <ul id="slider3-pager">
+                              <li><a href="#"><img src="images/portfolio/full-description/001-thumb.jpg" alt=""></a></li>
+                              <li><a href="#"><img src="images/portfolio/full-description/002-thumb.jpg" alt=""></a></li>
+                              <li><a href="#"><img src="images/portfolio/full-description/003-thumb.jpg" alt=""></a></li>
+                              <li><a href="#"><img src="images/portfolio/full-description/001-thumb.jpg" alt=""></a></li>
+                              <li><a href="#"><img src="images/portfolio/full-description/002-thumb.jpg" alt=""></a></li>
+                              <li><a href="#"><img src="images/portfolio/full-description/003-thumb.jpg" alt=""></a></li>
+                            </ul>
+                        
+                        </div>
 
 <!--                         <div class="banner">
                             <ul>
@@ -196,8 +204,8 @@
                 
                         <div> <!--class="post_content group">-->
                             <div class="work-skillsdate">
-                                <p class="skills"><span class="label">Skills:</span> Skills</p>
                                 <p class="workdate"><span class="label">Date:</DATE> span</p>
+                                <p class="skills"><span class="label">Skills:</span> Skills, Skills1, Skills2, Skills3, Skills4, Skills5, Skills6, Skills7, Skills8, Skills9, Skills0, Skills1, Skills2, Skills3, Skills4, Skills5,</p>
                             </div>
                 
                             <p style="text-align:Justify">
@@ -209,7 +217,7 @@
                 
                             <p style="text-align:Justify">
                                 The standard chunk of Lorem Ipsum used since the 1500s is reproduced 
-                                below for those interested<a href="#">. Sections 1.10.32</a> and 1.10.33 
+                                below for those interested <a href="google.com">. Sections 1.10.32</a> and 1.10.33 
                                 from &acirc;&euro;&oelig;de Finibus Bonorum et Malorum&acirc;&euro; by 
                                 Cicero are also reproduced in their exact original form, accompanied by 
                                 English versions from the 1914 translation by H. Rackham.
